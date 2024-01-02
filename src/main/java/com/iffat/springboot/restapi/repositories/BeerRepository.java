@@ -12,9 +12,9 @@ public interface BeerRepository extends JpaRepository<Beer, UUID> {
 
     Page<Beer> findAllByBeerName(String beerName, Pageable pageable);
 
-    Page<Beer> findAllByBeerStyleEnum(BeerStyleEnum beerStyleEnum, Pageable pageable);
+    Page<Beer> findAllByBeerStyle(BeerStyleEnum beerStyleEnum, Pageable pageable);
 
-    Page<Beer> findAllByBeerNameAndBeerStyleEnum(String beerName, BeerStyleEnum beerStyleEnum, Pageable pageable);
+    Page<Beer> findAllByBeerNameAndBeerStyle(String beerName, BeerStyleEnum beerStyleEnum, Pageable pageable);
 
     Beer findByUpc(String upc);
 }
