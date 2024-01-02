@@ -35,7 +35,7 @@ public class Beer {
     private Long version;
 
     private String beerName;
-    private BeerStyleEnum beerStyleEnum;
+    private BeerStyleEnum beerStyle;
     private String upc;
 
     private Integer quantityOnHand;
